@@ -2198,7 +2198,7 @@ function renderModalReadlistBtn(olId) {
       const active = current === key;
       return `<button class="modal-status-btn ${active ? 'active' : ''}" style="--st-color:${s.color}" onclick="setReadlistStatus('${book ? book.id : 0}','${key}')" title="${active ? 'Klicken, um von der Leseliste zu entfernen' : ''}">${s.icon} ${s.label}</button>`;
     }).join('')}
-  </div>${current ? `<div class="trope-hint" style="display:block;padding-top:2px">Status erneut anklicken, um das Buch von der Leseliste zu entfernen.</div>` : ''}`;
+  </div>${current ? `<div class="trope-hint" style="display:block;padding-top:2px">${t('clickToRemoveCaption')}</div>` : ''}`;
 }
 
 // ── REVIEWS ──────────────────────────────────────────
